@@ -7,11 +7,11 @@ original_image = cv2.imread('tekom.jpg')
 nonik_image = face_recognition.load_image_file('nonik.jpg')
 nonik_face_encodings = face_recognition.face_encodings(nonik_image)[0]
 #load the sample images and get the 128 face embeddings from them
-yuga_image = face_recognition.load_image_file('yuga.jpg')
+yuga_image = face_recognition.load_image_file('yuga.jpeg')
 yuga_face_encodings = face_recognition.face_encodings(yuga_image)[0]
 #save the encodings and the corresponding labels in seperate arrays in the same order
 known_face_encodings = [one_face_encodings]
-known_face_names = ["nonik ika nurfadila nim: 562020120010", "yuga"]
+known_face_names = ["nonik ika nurfadila nim: 562020120010", "yuga wira pratama nim: 562020120009"]
 #load the unknown image to recognize faces in it
 image_to_recognize = face_recognition.load_image_file('tkj.jpg')
 #detect all faces in the image
